@@ -1,0 +1,329 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #9cc6fa !important;
+    }
+    /* .picker{
+        display: none;
+    } */
+}
+/* https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* .example {background: pink;} */
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, div, header, aside, nav, footer{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../Images/Colors1.jpg);
+    background-size: cover;
+    background: #010152;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .site-header{
+    background-image: url(../Images/Apsgrey_3.jpg);
+    background-size: cover;
+    width: 100%;
+    color: white;
+    
+} */
+/* .site-header a{
+    color: white;
+    font-size: 30px;
+} */
+
+.site-header{
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+/* brand and links - items */
+
+/* .banner-header{
+    background-image: url(../Images/Car1.jpg);
+    background-size: cover;
+    width: 100%;
+    color: white;
+    margin: 5px;
+    flex-grow: 1;
+    margin: 5px;
+    /* justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+.banner-header img{
+    width: 100%;
+    height: 200px;
+    align-items: stretch;
+
+}
+.logo-site{
+    flex-grow: 1;
+    margin: 5px;
+    justify-content: flex-start;
+    }
+.links a{
+    padding: 8px;
+}
+.links a:hover{
+    color: white;
+    background: #4a4f50;
+}
+
+.main_menu > .btn{
+    margin: 8px 4px;
+    color: white;
+    border-radius: 4px;
+    border: solid 1px #e7e8e9;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    background-image: url(../Images/Gray.jpg);
+    /* transition: width 2s;
+    transition: width 2s, heith 2s; */
+    transition: all 1s;
+}
+
+.main_menu > .btn:hover{
+    /* width: 110px; */
+    box-shadow: 0px 3px 8px #f8f5f5;
+}
+.main_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    background-image: url(../Images/Colors36.jpg);
+    /* background: #0205aa;  */
+}
+
+/* . > .btn{
+    margin: 8px 4px;
+    color: white;
+    border-radius: 4px;
+    border: solid 1px #e7e8e9;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    background-image: url(../Images/Gray.jpg);
+    // transition: width 2s;
+    //transition: width 2s, heith 2s;
+    transition: all 1s;
+} */
+
+.container{
+    /* background-image: url(../Images/Colors41.jpg);
+    background-size: cover; */
+    background-color: #aab2c7;
+    /* viewport height in pct = 100% */
+    /* height: 100vh; */
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 2% 5% 2% 5%;
+    box-shadow: 0 0 20px #ebebebac;
+
+}
+
+.articles-news{
+    /* width: 60%; */
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #515050;
+    padding: 2% 5% 2% 5%;
+}
+.white{
+    color: white;
+}
+
+.caption{
+    text-indent: 5%;
+    padding: 1% 0%;
+}
+
+.middle img{
+    /* padding: 10px; */
+    margin: auto;
+    width: 100%;
+
+}
+.text-article{
+    padding: 1% 0 1% 0;
+    text-align: justify;
+    text-indent: 5%;
+    /* margin: 1%; */
+}
+.label{
+    color: #272626;
+}
+
+.option{
+    text-align: left;
+}
+.Contact-Card{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 5px;
+    width: auto;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+}
+
+.field.dropdown > select{
+    margin: 8px 0px;
+    color: grey;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    width: 15%px;
+    height: 5%px;
+    background: whitesmoke;
+    /* transition: width 2s;
+    transition: width 2s, heith 2s; */
+    transition: all 1s;
+    user-select: none;
+}
+
+.pictures > input{
+    display: flex;
+    border: solid 1px gray;
+    margin: 8px 0px;
+    color: grey;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    width: 15%px;
+    height: 5%px;
+    background: whitesmoke;
+    
+}
+
+/* .btn{
+    margin: 8px 4px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    background: #b4ddf8;
+    transition: all 1s;
+}
+
+.btn:hover{
+    box-shadow: 0px 3px 8px #777676;
+} */
+
+.myInputs{
+    margin: 8px 0px;
+    color: grey;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    width: 15%px;
+    height: 5%px;
+    background: whitesmoke;
+    /* transition: width 2s;
+    transition: width 2s, heith 2s; */
+    transition: all 1s;
+    user-select: none;
+}
+
+#input_file{
+    position:absolute; 
+    top:-999px; 
+    visibility:hidden
+}
+
+#button { 
+    width: 150px; 
+    height:50px; 
+    border-radius: 10px;
+    background-color: green;
+}
+/* visability: hidden; */
+
+.container > .card{ /* div about all cards*/
+    display: flex;
+
+    margin: 2%;
+    /* height: 60%; */
+    width: 15%;
+    border-radius: 20px;
+    color: #313131;
+    text-align: left;
+    /* background: #e4cbfd; */
+    /* background-image: url(../Images/Hollywood13.jpg); */
+    padding: 1%;
+    border: 2px solid #01015289 !important;
+    box-shadow: 0 0 20px #010152 !important;
+
+}
+.container .fluid{
+    background-color: #aab2c7;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding: 2% 5% 2% 5%;
+    color: gray;
+}
+.container .fluid > .card{ /* div about all cards*/
+    display: flex;
+
+    margin: 2%;
+    /* height: 60%; */
+    width: 15%;
+    border: 2px solid #74b2e4;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #313131;
+    text-align: center;
+    /* background: #e4cbfd; */
+    /* background-image: url(../Images/Hollywood13.jpg); */
+    padding: 1%;
+}
+
+.container > .card1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 9pt; 
+    margin-top: 1%;
+    /* height: 60%; */
+    width: 90%;
+    /* border: 1px solid #ffffff; */
+    border-radius: 8px;
+    color: #313131;
+    text-align: center;
+    /* background: #e4cbfd; */
+    /* background-image: url(../Images/Hollywood13.jpg); */
+    padding: 0.5%;
+    /* font-size: 12pt !important; */
+}
+/* .card img{
+    margin: auto;
+    /* width: auto; //
+
+} */
