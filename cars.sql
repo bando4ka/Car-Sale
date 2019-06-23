@@ -2,12 +2,11 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Время создания: Июн 23 2019 г., 21:46
--- Версия сервера: 10.1.36-MariaDB
--- Версия PHP: 7.2.10
+-- Host: 127.0.0.1
+-- Generation Time: Jun 23, 2019 at 10:06 PM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
-SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -20,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `cars`
+-- Database: `cars`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `articles`
+-- Table structure for table `articles`
 --
 
 CREATE TABLE `articles` (
@@ -42,11 +41,7 @@ CREATE TABLE `articles` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- ССЫЛКИ ТАБЛИЦЫ `articles`:
---
-
---
--- Дамп данных таблицы `articles`
+-- Dumping data for table `articles`
 --
 
 INSERT INTO `articles` (`id`, `title`, `textArticle`, `image`, `date`, `views`, `comments`, `author_id`, `category_id`) VALUES
@@ -58,7 +53,7 @@ INSERT INTO `articles` (`id`, `title`, `textArticle`, `image`, `date`, `views`, 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `authors`
+-- Table structure for table `authors`
 --
 
 CREATE TABLE `authors` (
@@ -67,11 +62,7 @@ CREATE TABLE `authors` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- ССЫЛКИ ТАБЛИЦЫ `authors`:
---
-
---
--- Дамп данных таблицы `authors`
+-- Dumping data for table `authors`
 --
 
 INSERT INTO `authors` (`author_id`, `authorName`) VALUES
@@ -83,7 +74,7 @@ INSERT INTO `authors` (`author_id`, `authorName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `cars`
+-- Table structure for table `cars`
 --
 
 CREATE TABLE `cars` (
@@ -120,11 +111,7 @@ CREATE TABLE `cars` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- ССЫЛКИ ТАБЛИЦЫ `cars`:
---
-
---
--- Дамп данных таблицы `cars`
+-- Dumping data for table `cars`
 --
 
 INSERT INTO `cars` (`ID`, `district`, `city`, `caryear`, `carmonth`, `make`, `model`, `bodyStyle`, `transmission`, `exteriorColor`, `numberOfDoors`, `engineCylinder`, `driveType`, `fuelType`, `condition1`, `mileage`, `hand`, `engineVolume`, `enginePower`, `image1`, `image2`, `image3`, `image4`, `image5`, `firstname`, `lastname`, `phone`, `email`, `password`, `date`) VALUES
@@ -160,7 +147,7 @@ INSERT INTO `cars` (`ID`, `district`, `city`, `caryear`, `carmonth`, `make`, `mo
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `carticles`
+-- Table structure for table `carticles`
 --
 
 CREATE TABLE `carticles` (
@@ -169,11 +156,7 @@ CREATE TABLE `carticles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- ССЫЛКИ ТАБЛИЦЫ `carticles`:
---
-
---
--- Дамп данных таблицы `carticles`
+-- Dumping data for table `carticles`
 --
 
 INSERT INTO `carticles` (`category_id`, `category`) VALUES
@@ -188,7 +171,7 @@ INSERT INTO `carticles` (`category_id`, `category`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -198,11 +181,7 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- ССЫЛКИ ТАБЛИЦЫ `users`:
---
-
---
--- Дамп данных таблицы `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`user_id`, `email`, `password`) VALUES
@@ -237,110 +216,72 @@ INSERT INTO `users` (`user_id`, `email`, `password`) VALUES
 (37, 'tomer.bu@gmail.com', '123456789');
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `articles`
+-- Indexes for table `articles`
 --
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `authors`
+-- Indexes for table `authors`
 --
 ALTER TABLE `authors`
   ADD PRIMARY KEY (`author_id`);
 
 --
--- Индексы таблицы `cars`
+-- Indexes for table `cars`
 --
 ALTER TABLE `cars`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Индексы таблицы `carticles`
+-- Indexes for table `carticles`
 --
 ALTER TABLE `carticles`
   ADD PRIMARY KEY (`category_id`);
 
 --
--- Индексы таблицы `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `articles`
+-- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT для таблицы `authors`
+-- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
   MODIFY `author_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT для таблицы `cars`
+-- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
   MODIFY `ID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT для таблицы `carticles`
+-- AUTO_INCREMENT for table `carticles`
 --
 ALTER TABLE `carticles`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT для таблицы `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
-
-
---
--- Метаданные
---
-USE `phpmyadmin`;
-
---
--- Метаданные для таблицы articles
---
-
---
--- Метаданные для таблицы authors
---
-
---
--- Метаданные для таблицы cars
---
-
---
--- Метаданные для таблицы carticles
---
-
---
--- Метаданные для таблицы users
---
-
---
--- Дамп данных таблицы `pma__table_uiprefs`
---
-
-INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
-('root', 'cars', 'users', '[]', '2018-10-11 17:16:23');
-
---
--- Метаданные для базы данных cars
---
-SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
